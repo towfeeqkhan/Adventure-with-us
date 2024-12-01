@@ -1,5 +1,23 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "/wp-content/(.*)",
+      "dest": "/wp-content/$1"
+    },
+    {
+      "src": "/wp-includes/(.*)",
+      "dest": "/wp-includes/$1"
+    },
+    {
+      "src": "/(.*)\\.(?:jpg|jpeg|gif|png|svg|ico|css|js)$",
+      "dest": "/$1.$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }

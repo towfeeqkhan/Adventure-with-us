@@ -9,6 +9,12 @@
         content="Adventure with us Tour and Travel is an online tour and travel company based in Srinagar Kashmir. We offer a wide range of packages to explore the beauty of Kashmir.">
     <meta name='robots' content='max-image-preview:large' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 
+    Bootstrap Link 
+  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://kashmirstory.co.in/feed/" />-->
     <!--<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed"
         href="https://kashmirstory.co.in/comments/feed/" />-->
@@ -3703,9 +3709,68 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-45b60c14"
-                                                                    data-id="45b60c14" data-element_type="column">
-                                                                    <div
+
+                                                                <!-- Form -->
+                                                                <section id="booknow"
+                                                                    style="margin-top: 80px; width: 100%; margin-bottom: 60px">
+                                                                    <h2 class="booknow-heading"
+                                                                        style="text-align: center; margin-bottom: 30px; color: white">
+                                                                        Book Now
+                                                                    </h2>
+
+                                                                    <form action="https://api.staticforms.xyz/submit"
+                                                                        method="post">
+                                                                        <div class="form-group">
+
+                                                                            <input type="hidden" name="accessKey"
+                                                                                value="4747be9e-5923-4e62-9a4d-dcc7144eea1e">
+                                                                            <!-- <label for="exampleInputEmail1">Email address</label> -->
+                                                                            <input type="text" class="form-control"
+                                                                                id="exampleInputEmail1"
+                                                                                aria-describedby="emailHelp" required
+                                                                                name="destination"
+                                                                                placeholder="Destination">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <!-- <label for="exampleInputPassword1">Password</label> -->
+                                                                            <input type="text" class="form-control"
+                                                                                id="exampleInputPassword1" required
+                                                                                name="name" placeholder="Your Name">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <!-- <label for="exampleInputPassword1">Password</label> -->
+                                                                            <input type="email" class="form-control"
+                                                                                id="exampleInputPassword1" required
+                                                                                name="email" placeholder="Your Email">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <!-- <label for="exampleInputPassword1">Password</label> -->
+                                                                            <input type="tel" class="form-control"
+                                                                                id="exampleInputPassword1" required
+                                                                                name="number" placeholder="Your Number">
+                                                                        </div>
+                                                                        <!--<div class="form-group">
+
+                                                                            <input type="number" class="form-control"
+                                                                                style="width: 10%;"
+                                                                                id="exampleInputPassword1" required
+                                                                                name="adults"
+                                                                                placeholder="No. Of Adults">
+                                                                        </div> -->
+                                                                        <!--<div class="form-group">
+                                                                            
+                                                                            <input type="number" class="form-control"
+                                                                                id="exampleInputPassword1" required
+                                                                                name="budget" placeholder="Budget">
+                                                                        </div> -->
+                                                                        <input type="hidden" name="redirectTo"
+                                                                            value="https://www.adventurewithus.in/Thank you.html">
+                                                                        <button type="submit" value="submit"
+                                                                            class="btn btn-outline-primary btn-lg">Send</button>
+                                                                    </form>
+
+                                                                </section>
+                                                                <!--    <div
                                                                         class="elementor-widget-wrap elementor-element-populated">
                                                                         <div class="elementor-element elementor-element-6b2b5df elementor-button-align-stretch elementor-widget elementor-widget-form"
                                                                             data-id="6b2b5df" data-element_type="widget"
@@ -3721,7 +3786,7 @@
                                                                                     <input type="hidden"
                                                                                         name="redirectTo"
                                                                                         value="https://www.adventurewithus.in/Thank you.html">
-                                                                                    <!--  <input type="hidden" name="post_id"
+                                                                                    <!-  <input type="hidden" name="post_id"
                                                                                         value="10" />
                                                                                     <input type="hidden" name="form_id"
                                                                                         value="6b2b5df" />
@@ -3729,7 +3794,7 @@
                                                                                         name="referer_title" value="" />
                                                                                     <input type="hidden"
                                                                                         name="queried_id" value="10" />  -->
-                                                                                    <div
+                                                                <!-- <div
                                                                                         class="elementor-form-fields-wrapper elementor-labels-above">
                                                                                         <div
                                                                                             class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required elementor-mark-required">
@@ -3784,7 +3849,7 @@
                                                                                                 required="required"
                                                                                                 aria-required="true">
                                                                                         </div>
-                                                                                        <!-- <div
+                                                                                        <!- <div
                                                                                             class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_8b4a2e3 elementor-col-100 elementor-field-required elementor-mark-required">
                                                                                             <label
                                                                                                 for="form-field-field_8b4a2e3"
@@ -3819,7 +3884,7 @@
                                                                                                 </select>
                                                                                             </div>
                                                                                         </div> -->
-                                                                                        <div
+                                                                <!--    <div
                                                                                             class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
                                                                                             <button type="submit"
                                                                                                 value="submit"
@@ -3834,46 +3899,45 @@
                                                                                             </button>
                                                                                         </div>
                                                                                     </div>
-                                                                                </form>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                                                </form> -->
                                                             </div>
-                                                        </section>
                                                     </div>
                                                 </div>
                                             </div>
                                         </section>
                                     </div>
                                 </div>
-                            </article>
                         </div>
-                        <!-- #content -->
+                        </section>
                     </div>
-                    <!-- #primary -->
                 </div>
-                <!-- #content-wrap -->
-
-            </main>
-            <!-- #main -->
-            <footer id="footer" class="site-footer" role="contentinfo">
-                <div id="footer-inner" class="clr">
-                    <div id="footer-bottom" class="clr no-footer-nav">
-                        <div id="footer-bottom-inner" class="container clr">
-                            <div id="copyright" class="clr" role="contentinfo">
-                                ©2024| Adventure with us| All Rights Reserved </div>
-                            <!-- #copyright -->
-                        </div>
-                        <!-- #footer-bottom-inner -->
-                    </div>
-                    <!-- #footer-bottom -->
-                </div>
-                <!-- #footer-inner -->
-            </footer>
-            <!-- #footer -->
+                </article>
         </div>
-        <!-- #wrap -->
+        <!-- #content -->
+    </div>
+    <!-- #primary -->
+    </div>
+    <!-- #content-wrap -->
+
+    </main>
+    <!-- #main -->
+    <footer id="footer" class="site-footer" role="contentinfo">
+        <div id="footer-inner" class="clr">
+            <div id="footer-bottom" class="clr no-footer-nav">
+                <div id="footer-bottom-inner" class="container clr">
+                    <div id="copyright" class="clr" role="contentinfo">
+                        ©2024| Adventure with us| All Rights Reserved </div>
+                    <!-- #copyright -->
+                </div>
+                <!-- #footer-bottom-inner -->
+            </div>
+            <!-- #footer-bottom -->
+        </div>
+        <!-- #footer-inner -->
+    </footer>
+    <!-- #footer -->
+    </div>
+    <!-- #wrap -->
     </div>
     <!-- #outer-wrap -->
     <div id="sidr-close">
@@ -3886,7 +3950,7 @@
         media="all" />
     <script id="chaty-front-end-js-extra">
         var chaty_settings = {
-            "ajax_url": "https:\/\/kashmirstory.co.in\/wp-admin\/admin-ajax.php",
+            "ajax_url": "",
             "analytics": "0",
             "capture_analytics": "0",
             "token": "3a079293cd",
@@ -4057,7 +4121,7 @@
             "verticalHeaderTarget": "link",
             "customScrollOffset": "0",
             "customSelects": ".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select",
-            "ajax_url": "https:\/\/kashmirstory.co.in\/wp-admin\/admin-ajax.php",
+            "ajax_url": "",
             "oe_mc_wpnonce": "13fb63182d"
         };
     </script>
@@ -4103,7 +4167,7 @@
     </script>
     <script id="elementor-pro-frontend-js-before">
         var ElementorProFrontendConfig = {
-            "ajaxurl": "https:\/\/kashmirstory.co.in\/wp-admin\/admin-ajax.php",
+            "ajaxurl": "",
             "nonce": "1aa8e72d02",
             "urls": {
                 "assets": "https:\/\/kashmirstory.co.in\/wp-content\/plugins\/elementor-pro\/assets\/",
